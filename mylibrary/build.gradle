@@ -11,9 +11,7 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -23,13 +21,19 @@ android {
         }
     }
 
-    flavorDimensions "jelly"
+    flavorDimensions "jelly", "ontop"
     productFlavors {
         strawberry {
             dimension "jelly"
         }
         blueberry {
             dimension "jelly"
+        }
+        topping {
+            dimension "ontop"
+        }
+        sprinkles {
+            dimension "ontop"
         }
     }
 
